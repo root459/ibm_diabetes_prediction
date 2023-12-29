@@ -1,0 +1,37 @@
+
+
+====>>>>>>>data analysis part<<<<<<<<<=========
+
+
+   =======data cleaning=====
+1)first see distribution of data(right skewed,left or normally) so to know which machine learning algo will be using.
+2)if categorical data check the value count.
+3)if continuous data then check the distribution.
+4)in pandas tables are known as data frames. important functions with order in which they should be used to understand the data =>1)read_csv 2)head(),tail(),columns()=>give all the columns,info()=>datatypes nullvalues etc,describe()=>statstical information,give data only about numerical data,shape()=>give dimensions of the data
+5)now comes the cleaning of the data 1) handling the outliers=>ask from the data provider,
+duplicates and
+ missing values
+ 6)outliers=>impute the data=>if data normally distributed  replace by mean
+ if not normal distrubtion replace by median or mode.Standard Deviation Method: Good for normally distributed data, but it might not work well with skewed or non-normally distributed data.
+
+Boxplot Method: Effective for visually identifying outliers and suitable for skewed distributions, but it might not be sensitive to outliers in smaller datasets.
+
+Z-Score Method: Useful for identifying outliers based on standard deviations from the mean, but it assumes a normal distribution and can be affected by extreme values.
+
+Density-Based Methods: Effective for identifying outliers in clusters or dense regions but might not work well with uniformly distributed data.
+
+7)duplicate values =>delete (drop)
+8)missing values => impute or delete
+9)categorical variables with many categories can be reduced using techniques like one hot encoding(for binary variables),label encoding(for non-binary
+10)df.duplicated().sum()#give result in boolean so we use the sum() which tell how many duplicate values are there in the data.
+11)df.drop_duplicates(inplace=True)#fix the duplicate values and delete them
+handling errors => df["age"].replace(250,25,inplace=True)
+df.isnull().sum()#give with columns how many null values it contains
+df.dropna()#delete the null record
+if not want to delete then
+df["Age"].fillna(value=df.mean(), inplace=True) #replacing nulls with mean of that column
+4)statstical analysis ==>
+
+
+object storage 
+watson studios
