@@ -34,4 +34,4 @@ df["Age"].fillna(value=df.mean(), inplace=True) #replacing nulls with mean of th
 
 
 object storage 
-watson studios
+watson studio
