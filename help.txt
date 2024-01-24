@@ -32,6 +32,5 @@ if not want to delete then
 df["Age"].fillna(value=df.mean(), inplace=True) #replacing nulls with mean of that column
 4)statstical analysis ==>
 
-
 object storage 
 watson studi
